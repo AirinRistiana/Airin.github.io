@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Airin</title>
+    <link rel="stylesheet" href="CSS/w3.css">
+</head>
+<body>
+    <!-- BANNER -->
+    <div class="w3-container w3-padding-16 w3-text-white" style="background-color: #E0218A;">
+        <h1>BARBIE</h1>
+        <hr>
+    </div>
+    <!-- NAVBAR -->
+    <div class="w3-bar w3-padding-16 w3-text-white" style="background-color: #E0218A;">
+        <a href="#" class="w3-bar-item w3-button w3-round-xlarge" onclick="openKota('Sinopsis')">Sinopsis</a>
+        <a href="#" class="w3-bar-item w3-button w3-round-xlarge" onclick="openKota('Award')">Award</a>
+        <div class="w3-dropdown-hover">
+            <button class="w3-button w3-round-xlarge">Pemain</button>
+            <div class="w3-dropdown-content w3-bar-block w3-pink w3-border">
+                <a href="#" class="w3-bar-item w3-button w3-round-xlarge" onclick="openKota('Pemain1')">Barbie</a>
+                <a href="#" class="w3-bar-item w3-button w3-round-xlarge" onclick="openKota('Pemain2')">Ken</a>
+                <a href="#" class="w3-bar-item w3-button w3-round-xlarge " onclick="openKota('Pemain3')">Barbie Pesenam</a>
+            </div>   
+        </div>
+    </div>
+    <!-- SINOPSIS -->
+    <div id="Sinopsis" class="w3-container kota" style="display:none">
+        <div class="w3-container" style="margin-top: 20px;">
+            <div class="w3-row">
+                <div class="w3-col w3-card-4 w3-round-large l8 w3-animate-left w3-text-white" style="background-color: #ED5C9B;">
+                    <div class="w3-container">
+                        <h1 style="text-align: center;">BARBIE</h1>
+                        <p>Film Barbie menceritakan tentang kehidupan para Barbie di Barbie Land dengan keunikan karakternya masing-masing. Di tempat tersebut, para perempuan dipanggil Barbie sedangkan laki-laki dipanggil Ken.
+                        <br><br>
+                        Barbie dengan peran utama Margot Robbie dan Ken dengan peran utama Ryan Gosling menjalani kehidupannya di Barbie Land dengan penuh kebahagiaan dan berwarna hingga tampak sempurna.
+                        <br><br>
+                        Barbie hidup layaknya boneka Barbie dengan kaki yang selalu berjinjit. Tidak hanya itu, Barbie juga berpenampilan yang menarik dan berglitter.
+                        <br><br>
+                        Namun pada suatu hari, kaki Barbie tersebut berubah menjadi datar sehingga tidak lagi berjinjit. Ia juga tidak memiliki kemampuan untuk terbang lagi saat keluar rumah.
+                        <br><br>
+                        Oleh sebab itu, Barbie akhirnya diusir dari Barbie Land lantaran dianggap tidak normal. Barbie pun pergi bersama Ken dengan mobil merah muda ke dunia nyata.
+                        <br><br>
+                        Saat berada di dunia nyata, mereka segera menemukan kegembiraan. Namun, keberadaan Barbie di dunia nyata disadari oleh beberapa orang sehingga membuat mereka dihantui bahaya hidup di antara manusia.
+                        </p>
+                    </div>
+                    
+                  </div>
+                <div class="w3-col w3-container l4 w3-animate-right">
+                    <img src="https://i.pinimg.com/564x/e5/62/90/e56290a55446b17c9ad17cfa93a87300.jpg" alt="" width="85%">
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PENULIS -->
+    <div id="Award" class="w3-container kota" style="display:none">
+            <div class="w3-container" style=" margin-top: 20px;">
+                <center><h1>PENGHARGAAN </h1></center>
+                <div class="w3-row w3-margin-top">
+                    <div class="w3-third w3-card-4 w3-pink w3-padding-16 w3-round-large w3-animate-left" style="margin-right: 10px;">
+                        <div class="w3-container">
+                            Golden Globe Award for Cinematic and Box Office Achievement (2023)
+                        </div>
+                        
+                    </div>
+                    <div class="w3-third w3-card-4 w3-pink w3-padding-16 w3-round-large w3-animate-top" style="margin-right: 10px;">
+                        <div class="w3-container">
+                            American Film Institute Award untuk Film Terbaik Tahun I (2024)
+                        </div>
+                        
+                    </div>
+                    <div class="w3-card-4 w3-pink w3-padding-16 w3-round-large w3-col w3-animate-right" style="width:340px; height: 76px;">
+                        <div class="w3-container">
+                            Gotham Tribute Award (2023)
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row w3-margin-top">
+                    <div class="w3-third w3-card-4 w3-pink w3-padding-16 w3-round-large w3-animate-left" style="margin-right: 10px;">
+                        <div class="w3-container">
+                            Critics' Choice Movie Award untuk Skenario Terbaik(2023)
+                        </div>
+                        
+                    </div>
+                    <div class="w3-third w3-card-4 w3-pink w3-padding-16 w3-round-large w3-animate-bottom" style="margin-right: 10px;">
+                        <div class="w3-container">
+                            Critics' Choice Movie Award untuk Skenario Terbaik  (2024)
+                        </div>
+                        
+                    </div>
+                    <div class="w3-card-4 w3-pink w3-padding-16 w3-round-large w3-col w3-animate-right" style="width:340px; height: 76px;">
+                        <div class="w3-container">
+                            Critics' Choice Movie Award untuk Tata Rias Terbaik(2023)
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- PEMAIN 1 -->
+    <div id="Pemain1" class="w3-container kota" style="display:none">
+        <div class="w3-container" style="margin-top: 20px;">
+            <center>
+                <div class="w3-card-4 w3-animate-top w3-round-large w3-text-white" style="margin-top: 10px; background-color: #F18DBC;">
+                    <div class="w3-container w3-animate-opacity">
+                        <h1 style="font-weight: bold;">Margot Robbie(Barbie)</h1> <br>
+                        <img src="https://i.pinimg.com/564x/e5/b3/92/e5b392067b85e3f420ff1e97a0fb1b94.jpg" alt="" height="200px" class="w3-circle"> <br>
+                        <p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Nama Asli
+                                    </td>
+                                    <td>
+                                        : Margot Elise Robbie
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Profesi
+                                    </td>
+                                    <td>
+                                        : Aktris
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tanggal Lahir
+                                    </td>
+                                    <td>
+                                        : 2 Juli 1990
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tempat Lahir
+                                    </td>
+                                    <td>
+                                        : Dalby, Queensland, Australia
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Film yang di bintangi Margot Robbie
+                                    </td>
+                                    <td>
+                                        : 1. The Wolf of Wall Street (2013)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;2. About Time (2013)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;3. Focus (2015)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;4. Whiskey Tango Foxtrot (2016)
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </center>
+        </div>
+    </div>
+
+    <!-- PEMAIN 2 -->
+    <div id="Pemain2" class="w3-container kota" style="display:none">
+        <div class="w3-container" style="margin-top: 20px;">
+            <center>
+                <div class="w3-card-4 w3-animate-left  w3-round-large" style="margin-top: 10px; background-color: #D0EDFA;">
+                    <div class="w3-container w3-animate-top">
+                        <h1 style="font-weight: bold;">Ryan Gosling(Ken)</h1> <br>
+                        <img src="https://i.pinimg.com/564x/f7/0f/fd/f70ffdf43ce5f0f7a4a9c92950ee2017.jpg" alt="" height="200px" class="w3-circle"> <br>
+                        <p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Nama Asli
+                                    </td>
+                                    <td>
+                                        : Ryan Gosling
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Profesi
+                                    </td>
+                                    <td>
+                                        : Aktor
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tanggal Lahir
+                                    </td>
+                                    <td>
+                                        : 12 November 1980
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tempat Lahir
+                                    </td>
+                                    <td>
+                                        : Kanada
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Film yang di bintangi Margot Robbie
+                                    </td>
+                                    <td>
+                                        : 1. First Man (2018)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;2. La La Land(2016)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;3. Blade Runner 2049(2017)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;4. The Nice Guys(2016)
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </center>
+        </div>
+    </div>
+
+    <!-- PEMAIN 3 -->
+    <div id="Pemain3" class="w3-container kota" style="display:none">
+        <div class="w3-container" style="margin-top: 20px;">
+            <center>
+                <div class="w3-card-4 w3-animate-right  w3-round-large" style="margin-top: 10px; background-color: #F18DBC;">
+                    <div class="w3-container w3-animate-top">
+                        <h1 style="font-weight: bold;">Kate McKinnon(Barbie Pesenam)</h1> <br>
+                        <img src="https://i.pinimg.com/736x/93/60/a1/9360a175f03e42d53c6de4d0445e9ce4.jpg" alt="" height="200px" class="w3-circle"> <br>
+                        <p>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Nama Asli
+                                    </td>
+                                    <td>
+                                        : Kathryn McKinnon Berthold
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Profesi
+                                    </td>
+                                    <td>
+                                        : Aktris
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tanggal Lahir
+                                    </td>
+                                    <td>
+                                        : 6 Januari 1984
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tempat Lahir
+                                    </td>
+                                    <td>
+                                        : Sea Cliff, New York
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Film yang di bintangi Margot Robbie
+                                    </td>
+                                    <td>
+                                        : 1. First Man (2018)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;2. La La Land(2016)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;3. Blade Runner 2049(2017)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                    </td>
+                                    <td>
+                                        &nbsp;&nbsp;&nbsp;4. The Nice Guys(2016)
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </p>
+                    </div>
+                </div>
+
+            </center>
+        </div>
+    </div>
+
+
+    <script>
+        function openKota(namakota) {
+         var i;
+         var x = document.getElementsByClassName("kota");
+         for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+         }
+         document.getElementById(namakota).style.display = "block";
+        }
+        </script>
+</body>
+</html>
